@@ -23,7 +23,10 @@ public class App {
         int b='b'; //Un caracter se guarda en uno entero en un ASCII
                 System.out.println(b);
         char c=98;
-        System.out.print(b+" "+c);
+        System.out.println(b+" "+c);
+
+        System.err.println("un bonito error");
+        System.out.println("un texto cualquiera");
 
     }
 
