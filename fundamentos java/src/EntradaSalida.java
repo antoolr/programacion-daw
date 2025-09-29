@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class EntradaSalida {
     public static void main (String[] args){
 
@@ -61,7 +62,9 @@ public class EntradaSalida {
         String profesion = teclado.nextLine(); 
 
         System.out.println("El usuario se llama "+nombre+" "+apellido+". Tiene " +edad+ " años y trabaja de "+profesion+"");
-        teclado.close(); //Cierras el flujo de teclad
+        teclado.close(); //Cierras el flujo de teclado
+
+        
 
          }
 }
