@@ -43,7 +43,7 @@ public class funciones {
         System.out.println(numero11);
 
     //Operador ternario
-    int a=10;
+    int a=5;
     int b=6;
     int x=a==10?b*2:a;
     System.out.println(x);
