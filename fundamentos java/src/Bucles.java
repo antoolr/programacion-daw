@@ -36,12 +36,20 @@ public class Bucles {
         //     k++;
         
         // }
-        Scanner teclado = new Scanner(System.in);
-        int numero=0;
-        do{
-        System.out.println("Escribe un numero entre 1 y 5: ");
-         numero=teclado.nextInt();
-            }while(numero<1||numero>5);
+        // Scanner teclado = new Scanner(System.in);
+        // int numero=0;
+        // do{
+        // System.out.println("Escribe un numero entre 1 y 5: ");
+        //  numero=teclado.nextInt();
+        //     }while(numero<1||numero>5);
+
+            //Bucles anidados
+            for (int i=1;i<=10;i++){
+                for (int j=1; j<=10;j++){
+                    System.out.println(i+"*"+j+"= "+(i*j));
+                }
+                
+            }
         }
         
     }
