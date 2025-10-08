@@ -25,7 +25,9 @@ public class Actividades5 {
     
 
         //Actividad 2 funciones diapositivas
-        //Leer los numeros entre 1 y 20 y saber cuales son divisibles por 3 y cuales son pares
         
+
+  
+    
     }
 }
