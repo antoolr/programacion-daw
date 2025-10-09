@@ -1,5 +1,6 @@
 public class Actividades6 {
     
+    //Ejercicio 1
     public static int numeroDigitos(int n){
             int contador=0;
         while(n>0){
@@ -17,15 +18,6 @@ public class Actividades6 {
             return 1+numeroDigitosRecurisvo(n/10);
         }
         }
-    
-    public static void main(String[] args) {
-        int numero=392434235;
-        System.out.println(numeroDigitosRecurisvo(numero));
-
-        System.out.println(potencia(6,0));
-    }
-
-
         //Ejercicio 2
         public static int sumaNumeros(int n){
             int suma=0;
@@ -56,21 +48,29 @@ public class Actividades6 {
 
         
         //Ejercicio 4
-        public static String pasarbinario (int n){
-            String cadena="";
-            if (n==0) {
-            return cadena; 
-        }
-        else {
-            cadena=cadena+n%2;
-            pasarbinario(n/2);
-        }
-        return cadena;    
-        }
-
-        
-
-        
+        public static String pasarbinario (int num){
+         if (num==0) {
+            return "";
+         } else {
+            return pasarbinario(num / 2) + (num % 2);
+         }
     }
+    
+    public static void main(String[] args) {
+        int numero=392434235;
+        System.out.println(numeroDigitos(numero));
+        System.out.println(numeroDigitosRecurisvo(numero));
+
+        System.out.println(potencia(6,3));
+        System.out.println(pasarbinario(300));
+    }
+
+}
+        
+
+        
+
+        
+    
 
 
