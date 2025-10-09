@@ -5,7 +5,7 @@ public class Actividades3 {
 
 public static void main (String[] args){
 
-    //Ejercicio 1
+    //Ejercicio 5
 
     // Entre 50 y 200 los multiplos de 2 y 3
     // Comprobar si numero/2 y numero/3 es igual a 0
@@ -20,7 +20,7 @@ public static void main (String[] args){
    
 
 
-    //Ejercicio 2
+    //Ejercicio 6
 
     //Hacer el factorial de un numero
     // Si numero es =5, hace 5*4*3*2*1
@@ -36,7 +36,7 @@ public static void main (String[] args){
     System.out.println(producto);
 
 
-    //Ejercicio 3
+    //Ejercicio 7
 
     //Leer numero de edades hasta -1 y entonces sacar el valor máximo y mínimo
 

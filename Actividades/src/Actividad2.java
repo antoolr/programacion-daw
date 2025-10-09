@@ -5,7 +5,7 @@ public class Actividad2 {
 
 public static void main (String[] args) {
 
-    //Ejercicio 2
+    //Ejercicio 3
     // Lector de notas 
     Scanner teclado=new Scanner(System.in);
     System.out.println("Introduce numero");
@@ -45,7 +45,7 @@ public static void main (String[] args) {
                System.out.println("Valor incorrecto");
         }
 
-    //Ejercicio 1
+    //Ejercicio 2
 
     //Resolución ecuaciones segundo grado
     int a=0,b=0,c=0;
@@ -74,7 +74,7 @@ public static void main (String[] args) {
         System.out.println("La solucion 1 es "+x2);
     }
 
-    //Ejercicio 3
+    //Ejercicio 4
 
     //Lector de año bisiesto
     System.out.println("Introduce el día: ");

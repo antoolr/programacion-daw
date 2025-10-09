@@ -1,6 +1,6 @@
 public class Actividades6 {
     
-    //Ejercicio 1
+    //Ejercicio 15
     public static int numeroDigitos(int n){
             int contador=0;
         while(n>0){
@@ -18,7 +18,7 @@ public class Actividades6 {
             return 1+numeroDigitosRecurisvo(n/10);
         }
         }
-        //Ejercicio 2
+        //Ejercicio 16
         public static int sumaNumeros(int n){
             int suma=0;
             for(int i=1;i<=n;i++){
@@ -36,7 +36,7 @@ public class Actividades6 {
         }
         }
         
-        //Ejercicio 3
+        //Ejercicio 17
 
         public static int potencia(int base, int exponente){
             //Caso base
@@ -47,7 +47,7 @@ public class Actividades6 {
         }
 
         
-        //Ejercicio 4
+        //Ejercicio 18
         public static String pasarbinario (int num){
          if (num==0) {
             return "";
