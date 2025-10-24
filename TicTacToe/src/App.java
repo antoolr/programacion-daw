@@ -15,26 +15,32 @@ public class App {
                 //Mostrar situación inicial
                 imprimeMatriz();
 
-                // for(int i=0;i<9;i++){
-                // System.out.print("Introduce coordenda del 1 al 9: ");
-                // posicion=teclado.nextInt();
-                // jugada(matriz, turno, posicion);
-                // if (comprobarGanador(turno)){
-                //     if (turno==true) System.out.println("El jugador 1 ha ganao");
-                //     else {System.out.println("El jugador 2 ha ganao");}
-                // }
-                // // imprimeMatriz(matriz);
-                // turno=!turno;
-                // }
-                do {
-                    System.out.print("Introduce coordenda del 1 al 9: ");
+                for(int i=0;i<9;i++){
+
+                System.out.print("Introduce coordenda del 1 al 9: ");
                 posicion=teclado.nextInt();
+                while(!valida(posicion)); 
                 jugada(matriz, turno, posicion);
+                if (comprobarGanador(turno)){
+                    if (turno==true) System.out.println("El jugador 1 ha ganao");
+                    else {System.out.println("El jugador 2 ha ganao");}
+                    break;
+                }
                 imprimeMatriz();
                 turno=!turno;
-                }while(!comprobarGanador(turno));
-                if(turno==true)System.out.println("El jugador 1 ha ganado");
-                else {System.out.println("El jugador 2 ha ganado");}
+                }
+                if (!comprobarGanador(turno) && !comprobarGanador(!turno))
+                    System.out.println("Hay un empate");
+                // do {
+                //     System.out.print("Introduce coordenda del 1 al 9: ");
+                // posicion=teclado.nextInt();
+                // jugada(matriz, turno, posicion);
+                // imprimeMatriz();
+                // turno=!turno;
+                // }while(!comprobarGanador(turno));
+                // if(turno==true)System.out.println("El jugador 1 ha ganado");
+                // else {System.out.println("El jugador 2 ha ganado");}
+                
                 
     }
 
@@ -46,7 +52,7 @@ public class App {
                 System.out.println();
         }
     }
-
+    
     public static void jugada (int[][] matriz, boolean turno, int posicion){
         int valor;
         if(turno==true) valor=juego1;
@@ -86,6 +92,41 @@ public class App {
         }
         
     }
+
+    public static boolean valida (int posicion){
+        boolean control = true;
+        switch (posicion){
+        case 1:
+                if (matriz[0][0]!=0) control=false;
+                break;
+            case 2:
+                if (matriz[0][1]!=0) control=false;
+                break;
+            case 3:
+                if (matriz[0][2]!=0) control=false;
+                break;
+            case 4:
+                if (matriz[1][0]!=0) control=false;
+                break;
+            case 5:
+                if (matriz[1][1]!=0) control=false;
+                break;
+            case 6:
+                if (matriz[1][2]!=0) control=false;
+                break;
+            case 7:
+                if (matriz[2][0]!=0) control=false;
+                break;
+            case 8:
+                if (matriz[2][1]!=0) control=false;
+                break;
+            case 9:
+                if (matriz[2][2]!=0) control=false;
+                break;
+        }
+        return control;
+    }
+
     public static boolean comprobarGanador(boolean turno){
         //Determinar el valor a buscar en la matriz
         int valor;
