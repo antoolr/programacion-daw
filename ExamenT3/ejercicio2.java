@@ -1,19 +1,8 @@
+package ExamenT3;
 import java.util.ArrayList;
-import java.util.Scanner;
 
-public class practicar {
+public class ejercicio2 {
     public static void main(String[] args) {
-
         
     }
 }
-
-
-
-
-
-    
-
-    
-
-
