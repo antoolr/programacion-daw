@@ -186,6 +186,19 @@ public class batalla {
         System.out.println("Estado final:");
         System.out.println(combatiente1);
         System.out.println(combatiente2);
+        
+        // Verificar si una lista está vacía (ganador del campeonato)
+        if (orcos.isEmpty()) {
+            System.out.println("Caballeros y magon han ganado");
+            for (personaje p : caballerosYMagos) {
+                System.out.println("- " + p.getNombre() + " [Vida: " + p.getVida() + "]");
+            }
+        } else if (caballerosYMagos.isEmpty()) {
+            System.out.println("Orcos han ganado");
+            for (personaje p : orcos) {
+                System.out.println("- " + p.getNombre() + " [Vida: " + p.getVida() + "]");
+            }
+        }
     }
 
     private void muestraListaCombatientes(ArrayList<personaje> lista) {
